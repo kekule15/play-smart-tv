@@ -29,13 +29,14 @@ fun HomePage(navController: NavController) {
     Scaffold(
         modifier = Modifier.padding(horizontal = 0.dp),
         topBar = {
-            TopAppBar(backgroundColor = Color.DarkGray) {
+            TopAppBar(backgroundColor = Color.Transparent, elevation = 0.dp) {
                 Text(
                     text = "Movies",
                     modifier = Modifier.padding(horizontal = 10.dp),
-                    color = Color.White, fontWeight = FontWeight.Bold
+                     fontWeight = FontWeight.Bold
                 )
             }
+
         },
     ) { paddingValues ->
         Box(
